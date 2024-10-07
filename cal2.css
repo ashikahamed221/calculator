@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 60px;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 35%;
+    top:140px;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px;
+    background-color:rgb(15, 14, 14);
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px orange;
+    
+}
+button{
+    border-radius:200%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color:white;
+    color:black;
+    border: none;
+    box-shadow: -1px -1px 10px 2px black,1px 1px 10px 2px ;
+}
+button:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.orange{
+    background-color: orange;
+    color: black;
+    border: solid black 1px;
+    box-shadow: 1px 1px 20px;
+    box-shadow: 1px 1px 20px 1px black,1px 1px 20px 1px;
+}
+.orange:hover{
+    background-color:gainsboro;
+}
+.gray{
+    background-color:gray;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 20px 2px black;
+}
+input{
+   
+    top:120px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    height: 45px;
+    width: 31%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    left:35%;
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+    margin: 5px;
+    border: 0;
+    box-shadow: 1px 1px 12px 1px black,-1px -1px 20px 1px black;
+}
+h1{
+    color: white;
+    background-color: rgb(255, 166, 0);
+    text-align: center;
+    color: black;
+}
+@media screen and (max-width:320px) {
+    .button{
+        position: relative;
+        padding-right: 10px;
+        padding-left: 40px;
+        padding-left: 40px;
+    }
+    button{
+        position: relative;
+        right:15px;
+    }
+    input{
+        width: 110%;
+        border: none;
+        box-shadow: none;
+        bottom: 90%;
+        right:90px
+    
+    }
+    h1{
+        background:none;
+        color: white;
+        display: grid;
+        justify-content: flex-start;
+        margin: 8px;
+    }
+}
+@media screen and(min-width:1024px) {
+    input{
+        width:70%;
+        position: relative;
+        left:70%;
+    }
+}
+@media screen and(max-width:767px) {
+    input{
+        width:100%;
+    }
+}
+
